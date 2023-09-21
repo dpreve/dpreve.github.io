@@ -1,23 +1,30 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Project",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Portfolio",
+    "section": "",
+    "text": "This is a demo Quarto website."
+  },
+  {
+    "objectID": "project_1.html",
+    "href": "project_1.html",
+    "title": "Project 1",
     "section": "",
     "text": "The response is the length of odontoblasts (cells responsible for tooth growth) in 60 guinea pigs. Each animal received one of three dose levels of vitamin C (0.5, 1, and 2 mg/day) by one of two delivery methods, orange juice or ascorbic acid (a form of vitamin C and coded as VC).\nThe first three observations of the dataset:\n\nhead(ToothGrowth, 3)\n\n   len supp dose\n1  4.2   VC  0.5\n2 11.5   VC  0.5\n3  7.3   VC  0.5\n\n\nA box plot:\n\nlibrary(tidyverse)\n\nToothGrowth |> \n  mutate(dose = as.factor(dose)) |> \n  ggplot(aes(x = dose, y = len, fill = dose)) +  \n  geom_boxplot()"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Overview",
+    "objectID": "project_2.html",
+    "href": "project_2.html",
+    "title": "Project 2",
     "section": "",
-    "text": "This is a test for my Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This study aims to investigate the effect of diet on early growth of chicks.\nThe first three observations of the dataset:\n\nhead(ChickWeight, 3)\n\n  weight Time Chick Diet\n1     42    0     1    1\n2     51    2     1    1\n3     59    4     1    1\n\n\nNumber of rows and columns:\n\ndim(ChickWeight)\n\n[1] 578   4\n\n\nCheck for missing values:\n\nsum(is.na(ChickWeight))\n\n[1] 0"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About this demo site."
   }
 ]
